@@ -1,5 +1,4 @@
 ﻿var todos = new List<string>();
-Console.Clear();
 Console.Title = "TODO List";
 Console.WriteLine("TODO List");
 Console.WriteLine();
@@ -33,7 +32,7 @@ while(!exit)
             Console.WriteLine("Invalid option. Please try again.");
             break;
     }
-
+    Console.Clear();
 }
 Console.WriteLine("Goodbye!");
 Console.WriteLine("Press any key to continue...");
@@ -61,7 +60,6 @@ void AddTodo()
             Console.WriteLine($"TODO successfully added: {description}");
         }
     }
-    HoldScreen();
 }
 
 void RemoveTodo()
@@ -77,7 +75,6 @@ void RemoveTodo()
     {
         Console.WriteLine("Invalid index. Please try again.");
     }
-    HoldScreen();
 }
 
 void SeeAllTodos()
@@ -90,14 +87,6 @@ void SeeAllTodos()
         result += $"{(i + 1)}. {todos[i]}\n";
     }
     Console.WriteLine(result);
-    HoldScreen();
-}
-
-void HoldScreen()
-{
-    Console.WriteLine();
-    Console.WriteLine("Press any key to continue...");
-    Console.ReadKey();
 }
 
 // class Program
