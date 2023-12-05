@@ -7,6 +7,7 @@ Console.WriteLine("Hello!");
 bool exit = false;
 while(!exit)
 {
+    Console.Clear();
     Console.WriteLine("What do you want to do?");
     Console.WriteLine("[S]ee all TODOs");
     Console.WriteLine("[A]dd a TODO");
@@ -32,8 +33,7 @@ while(!exit)
             Console.WriteLine("Invalid option. Please try again.");
             break;
     }
-    
-    Console.Clear();
+
 }
 Console.WriteLine("Goodbye!");
 Console.WriteLine("Press any key to continue...");
