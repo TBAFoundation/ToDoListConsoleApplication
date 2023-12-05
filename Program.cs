@@ -1,4 +1,5 @@
 ﻿var todos = new List<string>();
+Console.Clear();
 Console.Title = "TODO List";
 Console.WriteLine("TODO List");
 Console.WriteLine();
@@ -7,7 +8,6 @@ Console.WriteLine("Hello!");
 bool exit = false;
 while(!exit)
 {
-    Console.Clear();
     Console.WriteLine("What do you want to do?");
     Console.WriteLine("[S]ee all TODOs");
     Console.WriteLine("[A]dd a TODO");
